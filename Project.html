@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muskan's Fitness gym</title>
+    <style>
+        body {
+            background-image: url('gym image2.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: white;
+            font-family: cursive;
+        }
+
+        .left {
+            /* border: 2px solid tomato; */
+            /* since div is block element so it takes full horizontal space so in order to avoid we did inline-block and so now it will not take any extra spaces*/
+            display: inline-block;
+            /* the left box will remain in left */
+            position: absolute;
+            left: 34px;
+            top: 18px;
+        }
+
+        .mid {
+            /* border: 2px solid yellow; */
+            /* centering the box */
+            display: block;
+            margin: 29px auto;
+            width: 50%;
+        }
+
+        .right {
+            /* border: 2px solid midnightblue; */
+            display: inline-block;
+            /* the right box will remain in right */
+            position: absolute;
+            right: 34px;
+            top: 35px;
+        }
+
+        .navbar li {
+            /* elements side side mai a gya */
+            display: inline-block;
+            margin-top: 20px;
+            margin-left: 25px;
+        }
+
+        .navbar li a {
+            /* color of the words inside nav bar */
+            color: white;
+            /* to remove underline from the words */
+            text-decoration: none;
+            /* to make spaces around each word */
+            padding: 25px;
+            font-size: 25px;
+        }
+
+        .navbar li a:hover {
+            /* when cursor will go on the top of the elements yeh sb change hoga */
+            text-decoration: underline;
+            color: gray;
+        }
+
+        .left img {
+            width: 100px;
+        }
+
+        .left div {
+            text-align: center;
+            font-size: 15px;
+            line-height: 0px;
+            font-weight: bold;
+        }
+
+        .btn {
+            margin: 9px;
+            background-color: black;
+            color: white;
+            border: 2px solid gray;
+            padding: 4px 14px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            color: gray;
+        }
+
+        .container {
+            margin: 100px 700px;
+            padding: 30px;
+            width: 33%;
+            border-radius: 20px;
+            border: 2px solid gray;
+            color: white;
+        }
+
+        .form-group input {
+            text-align: center;
+            display: block;
+            width: 400px;
+            margin-left: 100px;
+            margin-bottom: 10px;
+            padding: 3px;
+            border: 2px solid black;
+            /* font-size for text size inside the box */
+            font-size: 22px;
+            border-radius: 8px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: bold;
+        }
+
+        .container h1 {
+            text-align: center;
+            font-weight: bold;
+            color: khaki;
+        }
+
+        .container button {
+            display: block;
+            width: 50%;
+            margin: 25px auto;
+            font-size: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="gym logo2.jpg" alt="">
+            <div>Muskan's Fitness</div>
+        </div>
+        <!-- mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <!-- right box for buttons -->
+        <div class="right">
+            <button class="btn">Call Us Now</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the best gym of Kolkata now</h1> <br>
+        <form action="">
+            <div class="form-group">
+                <input type="text" name="myName" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <input type="number" name="myAge" placeholder="Enter your age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="myGender" placeholder="Enter your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="myNumber" placeholder="Enter your Contact Number">
+            </div>
+            <div class="form-group">
+                <input type="text" name="myEmail" placeholder="Enter your Email Id">
+            </div>
+            <div class="form-group">
+                <input type="text" name="myAddress" placeholder="Enter your address">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
